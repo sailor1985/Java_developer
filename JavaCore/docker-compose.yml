@@ -1,0 +1,6 @@
+services:
+  doc-gen:
+    build: .
+    volumes:
+      # Связываем текущую папку с папкой /app в контейнере
+      - .:/app
