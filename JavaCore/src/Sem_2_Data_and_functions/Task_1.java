@@ -20,9 +20,7 @@ public class Task_1 {
     }
     public static int [] AddLast(int [] arr, int num) {
         int[] tmpArr = new int [arr.length + 1];
-        for (int i = 0; i < arr.length; i++) {
-            tmpArr[i] = arr[i];
-        }
+        System.arraycopy(arr, 0, tmpArr, 0, arr.length);
         tmpArr[arr.length] =num;
         return tmpArr;
     }
