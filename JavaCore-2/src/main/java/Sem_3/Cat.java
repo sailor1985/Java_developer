@@ -12,10 +12,6 @@ public class Cat {
     private  String name;
     private int age;
     public int add(int a, int b) {
-
-
         return a+b;
     }
-
-
 }
