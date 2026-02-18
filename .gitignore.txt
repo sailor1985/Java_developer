@@ -4,6 +4,7 @@
 *.iws
 *.ipr
 ~$*
+*.tmp
 *.gitignore.txt
 
 
