@@ -1,0 +1,1 @@
+Проверочный файл работы кода из Task_1_BackupSystem.java
