@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    static void main(String[] args) {
+    static void main() {
         Employee employee_1 = new Employee("Алексей", Male.MALE, "директор");
         Employee employee_2 = new Employee("Эльвира", Male.FEMALE, "уборщица");
         Employee employee_3 = new Employee("Сергей", Male.MALE, "слесарь");
@@ -27,7 +27,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Определяем формат, в котором пользователь должен ввести дату
-        // Например: день.месяц.год (15.05.2023)
+        // Например: день. месяц. год (15.05.2023)
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
 
         System.out.println("Введите дату в формате ДД.ММ.ГГГГ (например, 20.02.2024):");
@@ -45,7 +45,7 @@ public class Main {
     }
     @Getter
     enum Holidays {
-        NEW_YEAR("Новый год",12, 31),MARCH_8("8 Марта", 3, 8), FEBRUARY_23("23 Февраля",2,23);
+        NEW_YEAR("Новый год",12, 31),MARCH_8("8 Марта", 3, 8),FEBRUARY_23("23 Февраля",2,23);
         private final String description;
         private final MonthDay date;
 
