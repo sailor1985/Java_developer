@@ -1,4 +1,4 @@
-package DZ_1;
+package DZ_1_include_Sem_2_Programming_interfaces;
 
 import javax.swing.*;
 import java.awt.*;

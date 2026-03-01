@@ -1,4 +1,4 @@
-package DZ_1;
+package DZ_1_include_Sem_2_Programming_interfaces;
 
 public class Main {
     public static void main(String[] args) {
