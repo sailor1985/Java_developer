@@ -13,13 +13,14 @@ import java.util.List;
 public class Server {
     private ServerView view;
     private boolean isServerWorking;
-    private final List<Client> clients = new ArrayList<>(); // Список подключенных клиентов
+    private final List<Client> clients;// Список подключенных клиентов
     private static final String CONNECTED = " подключился к беседе";
     private Repository repository;
 
     public Server(ServerView view) {
         this.view = view;
         this.repository = new Repository(view);
+        clients = new ArrayList<>();
     }
 
     public void sendMessageToClient(String message) {

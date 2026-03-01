@@ -4,7 +4,7 @@ import DZ_2.Task_1.Programm__interfaces.Server.ServerView;
 
 import java.io.*;
 
-public class Repository {
+public class Repository implements RepositoryView {
 
     private final ServerView view;
     private static final String ERROR_WRITE = "Ошибка записи в файл: ";
@@ -17,6 +17,7 @@ public class Repository {
     }
 
     // Запись строки в файл (true - значит дописывать в конец)
+    @Override
     public void saveLogToFile(String text) {
         try (FileWriter writer = new FileWriter(LOG_PATH, true)) {
             writer.write(text + "\n");
@@ -28,6 +29,7 @@ public class Repository {
     }
 
     // Чтение всего файла целиком
+    @Override
     public String readLogFromFile() {
         StringBuilder sb = new StringBuilder();
         try (BufferedReader reader = new BufferedReader(new FileReader(LOG_PATH))) {
