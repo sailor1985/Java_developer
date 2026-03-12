@@ -1,4 +1,4 @@
-package ru.goncharov.Task_2;
+package Sem_6_Maven.Task_2;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;

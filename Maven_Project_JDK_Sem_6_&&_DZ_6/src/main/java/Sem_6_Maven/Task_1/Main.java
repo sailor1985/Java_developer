@@ -1,4 +1,4 @@
-package ru.goncharov.Task_1;
+package Sem_6_Maven.Task_1;
 
 import org.apache.commons.math3.stat.descriptive.DescriptiveStatistics;
 import org.apache.commons.math3.util.ArithmeticUtils;
