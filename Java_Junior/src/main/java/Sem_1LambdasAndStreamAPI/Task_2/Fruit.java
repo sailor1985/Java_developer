@@ -1,9 +1,9 @@
-package Sem_2LambdasAndStreamAPI.Task_2;
+package Sem_1LambdasAndStreamAPI.Task_2;
 
-public class DumplingsMeat implements SemiFinishedFood{
+public class Fruit implements HealfyFood{
     @Override
     public boolean getProteins() {
-        return true;
+        return false;
     }
 
     @Override
@@ -13,11 +13,11 @@ public class DumplingsMeat implements SemiFinishedFood{
 
     @Override
     public boolean getCarbohydrates() {
-        return false;
+        return true;
     }
 
     @Override
     public String getName() {
-        return "Пельмени";
+        return "Фрукт";
     }
 }

@@ -1,8 +1,7 @@
-package Sem_2LambdasAndStreamAPI.Task_1;
+package Sem_1LambdasAndStreamAPI.Task_1;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /*
 Задача 1: Реализовать систему учёта книг в библиотеке

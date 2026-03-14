@@ -1,14 +1,14 @@
-package Sem_2LambdasAndStreamAPI.Task_2;
+package Sem_1LambdasAndStreamAPI.Task_2;
 
-public class Chicken implements HealfyFood {
+public class Cheburek implements SemiFinishedFood{
     @Override
     public boolean getProteins() {
-        return true;
+        return false;
     }
 
     @Override
     public boolean getFats() {
-        return false;
+        return true;
     }
 
     @Override
@@ -18,6 +18,6 @@ public class Chicken implements HealfyFood {
 
     @Override
     public String getName() {
-        return "Курица";
+        return "Чебурек";
     }
 }
