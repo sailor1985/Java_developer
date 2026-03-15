@@ -1,9 +1,9 @@
-package Sem_1LambdasAndStreamAPI.Task_2;
+package Sem_1_LambdasAndStreamAPI.Task_2;
 
-public class BalykCheese implements Snack {
+public class DumplingsBerries implements SemiFinishedFood{
     @Override
     public boolean getProteins() {
-        return true;
+        return false;
     }
 
     @Override
@@ -13,11 +13,11 @@ public class BalykCheese implements Snack {
 
     @Override
     public boolean getCarbohydrates() {
-        return false;
+        return true;
     }
 
     @Override
     public String getName() {
-        return "Сыр (Балык)";
+        return "Замороженные ягоды";
     }
 }

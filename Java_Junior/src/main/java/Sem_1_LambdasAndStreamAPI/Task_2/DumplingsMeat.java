@@ -1,14 +1,14 @@
-package Sem_1LambdasAndStreamAPI.Task_2;
+package Sem_1_LambdasAndStreamAPI.Task_2;
 
-public class Crisps implements Snack{
+public class DumplingsMeat implements SemiFinishedFood{
     @Override
     public boolean getProteins() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean getFats() {
-        return true;
+        return false;
     }
 
     @Override
@@ -18,6 +18,6 @@ public class Crisps implements Snack{
 
     @Override
     public String getName() {
-        return "Чипсы";
+        return "Пельмени";
     }
 }

@@ -1,4 +1,4 @@
-package Sem_1LambdasAndStreamAPI.Task_1;
+package Sem_1_LambdasAndStreamAPI.Task_1;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

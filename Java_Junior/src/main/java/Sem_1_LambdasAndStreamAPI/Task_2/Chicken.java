@@ -1,9 +1,9 @@
-package Sem_1LambdasAndStreamAPI.Task_2;
+package Sem_1_LambdasAndStreamAPI.Task_2;
 
-public class Fruit implements HealfyFood{
+public class Chicken implements HealfyFood {
     @Override
     public boolean getProteins() {
-        return false;
+        return true;
     }
 
     @Override
@@ -13,11 +13,11 @@ public class Fruit implements HealfyFood{
 
     @Override
     public boolean getCarbohydrates() {
-        return true;
+        return false;
     }
 
     @Override
     public String getName() {
-        return "Фрукт";
+        return "Курица";
     }
 }
