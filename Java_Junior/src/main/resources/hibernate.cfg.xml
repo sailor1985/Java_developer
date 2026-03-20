@@ -8,9 +8,16 @@
         <!-- Настройки подключения к базе данных -->
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <!-- В конце URL обязательно добавь название базы данных, например /test -->
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/studentsDB</property>
         <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">admin</property>
+        <property name="hibernate.connection.password">password</property>
+
+        <!-- JDBC connection pool settings -->
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        <property name="hibernate.c3p0.timeout">300</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.c3p0.idle_test_period">3000</property>
 
         <!-- Настройки диалекта (для MySQL 8.x лучше использовать этот) -->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
@@ -19,8 +26,17 @@
         <property name="show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
 
+        <!-- Context configuration -->
+        <property name="hibernate.current_session_context_class">thread</property>
+
         <!-- Автоматическое обновление таблиц при запуске (очень удобно для обучения) -->
         <property name="hibernate.hbm2ddl.auto">update</property>
 
+        <!-- Mention annotated entity class -->
+        <mapping class="Sem_4_DB.models.Student"/>
+
         <!-- Регистрация твоего класса-сущности -->
-        <mapping class="Les_4_DBAndTools.Magic"/></session-factory></hibernate-configuration>
+        <!--<mapping class="Les_4_DBAndTools.Magic"/>-->
+
+    </session-factory>
+</hibernate-configuration>

@@ -9,75 +9,77 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>25</maven.compiler.source>
-        <maven.compiler.target>25</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
+        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.42</version>
+            <version>1.18.34</version> <!-- Стабильная версия -->
             <scope>provided</scope>
         </dependency>
 
-        <!-- Добавляем зависимость для Jackson -->
+        <!-- Jackson -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.21.1</version>
-            <scope>compile</scope>
+            <version>2.17.0</version>
         </dependency>
-
-          <!-- Поддержка XML-сериализатора -->
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-xml</artifactId>
-            <version>2.21.1</version>
-            <scope>compile</scope>
+            <version>2.17.0</version>
         </dependency>
 
-        <!-- Драйвер базы данных H2 -->
+        <!-- БД Драйверы -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>2.2.224</version>
         </dependency>
-
-        <!-- Jakarta Persistence API -->
-        <dependency>
-            <groupId>jakarta.persistence</groupId>
-            <artifactId>jakarta.persistence-api</artifactId>
-            <version>3.1.0</version>
-        </dependency>
-
-        <!-- Source: https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
-        <dependency>
-            <groupId>org.hibernate.orm</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>6.6.44.Final</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <!-- Hibernate (реализация JPA) -->
-        <!-- Source: https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-community-dialects -->
-        <dependency>
-            <groupId>org.hibernate.orm</groupId>
-            <artifactId>hibernate-community-dialects</artifactId>
-            <version>6.6.44.Final</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <!-- Source: https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
-            <version>9.6.0</version>
-            <scope>compile</scope>
+            <version>9.1.0</version>
         </dependency>
 
+        <!-- Hibernate 7 Core -->
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>7.3.0.Final</version>
+        </dependency>
 
+        <!-- Hibernate 7 C3P0 (Исправлено!) -->
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-c3p0</artifactId>
+            <version>7.3.0.Final</version>
+        </dependency>
 
+        <!-- Диалекты (если нужны) -->
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-community-dialects</artifactId>
+            <version>7.3.0.Final</version>
+        </dependency>
+
+        <!-- Фикс логов для Hibernate 7 -->
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <version>3.6.1.Final</version>
+        </dependency>
+
+        <!-- API (уже входит в hibernate-core, но можно оставить для надежности) -->
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.2.0</version>
+        </dependency>
     </dependencies>
 
 </project>

@@ -94,7 +94,7 @@ public class Db {
         }*/
 
         //4. Открываем сессию для удаления данных
-        try (Session session = connector.getSession()) {
+/*        try (Session session = connector.getSession()) {
             Transaction t = session.beginTransaction();
             List<Magic> magics = session.createQuery("FROM Magic ", Magic.class).getResultList();
             magics.forEach(session::remove);
@@ -104,7 +104,7 @@ public class Db {
 
         } catch (Exception e) {
             e.printStackTrace();
-        }
+        }*/
 
        /* // Начинаем транзакцию перед сохранением объектов
         session.beginTransaction();
