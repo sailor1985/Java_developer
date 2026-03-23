@@ -8,9 +8,9 @@
         <!-- Настройки подключения к базе данных -->
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <!-- В конце URL обязательно добавь название базы данных, например /test -->
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/studentsDB</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/person_db</property>
         <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">password</property>
+        <property name="hibernate.connection.password">admin</property>
 
         <!-- JDBC connection pool settings -->
         <property name="hibernate.c3p0.min_size">5</property>
@@ -33,7 +33,7 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- Mention annotated entity class -->
-        <mapping class="Sem_4_DB.models.Student"/>
+        <mapping class="DZ_4.Person"/>
 
         <!-- Регистрация твоего класса-сущности -->
         <!--<mapping class="Les_4_DBAndTools.Magic"/>-->
