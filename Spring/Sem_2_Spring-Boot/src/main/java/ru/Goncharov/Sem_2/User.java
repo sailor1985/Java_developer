@@ -1,4 +1,4 @@
-package ru.Goncharov.Sem_2_Spring.Boot;
+package ru.Goncharov.Sem_2_Spring;
 
 import lombok.Data;
 
@@ -13,6 +13,4 @@ public class User {
         this.id = idCounter++;
         this.name = name;
     }
-
-
 }

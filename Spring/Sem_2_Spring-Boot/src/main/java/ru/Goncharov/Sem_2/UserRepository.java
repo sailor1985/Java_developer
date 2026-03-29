@@ -1,4 +1,4 @@
-package ru.Goncharov.Sem_2_Spring.Boot;
+package ru.Goncharov.Sem_2_Spring;
 
 import org.springframework.stereotype.Component;
 
