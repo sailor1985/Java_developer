@@ -1,4 +1,4 @@
-package Sem_3_SpringFarServerApp.api;
+package Sem_3_And_DZ_3_SpringFarServerApp.api;
 
 import lombok.Data;
 

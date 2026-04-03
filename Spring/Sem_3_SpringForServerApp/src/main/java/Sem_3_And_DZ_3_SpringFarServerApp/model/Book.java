@@ -1,9 +1,8 @@
-package Sem_3_SpringFarServerApp.model;
+package Sem_3_And_DZ_3_SpringFarServerApp.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 @Data
 @NoArgsConstructor

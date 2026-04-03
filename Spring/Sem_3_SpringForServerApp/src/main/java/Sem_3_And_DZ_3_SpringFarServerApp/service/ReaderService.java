@@ -1,11 +1,11 @@
-package Sem_3_SpringFarServerApp.service;
+package Sem_3_And_DZ_3_SpringFarServerApp.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import Sem_3_SpringFarServerApp.model.Issue;
-import Sem_3_SpringFarServerApp.model.Reader;
-import Sem_3_SpringFarServerApp.repository.IssueRepository;
-import Sem_3_SpringFarServerApp.repository.ReaderRepository;
+import Sem_3_And_DZ_3_SpringFarServerApp.model.Issue;
+import Sem_3_And_DZ_3_SpringFarServerApp.model.Reader;
+import Sem_3_And_DZ_3_SpringFarServerApp.repository.IssueRepository;
+import Sem_3_And_DZ_3_SpringFarServerApp.repository.ReaderRepository;
 
 import java.util.List;
 import java.util.NoSuchElementException;

@@ -1,7 +1,7 @@
-package Sem_3_SpringFarServerApp.repository;
+package Sem_3_And_DZ_3_SpringFarServerApp.repository;
 
 import org.springframework.stereotype.Repository;
-import Sem_3_SpringFarServerApp.model.Issue;
+import Sem_3_And_DZ_3_SpringFarServerApp.model.Issue;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package Sem_3_SpringFarServerApp.model;
+package Sem_3_And_DZ_3_SpringFarServerApp.model;
 
 import lombok.Data;
 

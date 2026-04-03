@@ -1,4 +1,4 @@
-package Sem_3_SpringFarServerApp.api;
+package Sem_3_And_DZ_3_SpringFarServerApp.api;
 
 
 import lombok.RequiredArgsConstructor;
@@ -6,8 +6,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import Sem_3_SpringFarServerApp.model.Issue;
-import Sem_3_SpringFarServerApp.service.IssueService;
+import Sem_3_And_DZ_3_SpringFarServerApp.model.Issue;
+import Sem_3_And_DZ_3_SpringFarServerApp.service.IssueService;
 
 import java.util.List;
 import java.util.NoSuchElementException;

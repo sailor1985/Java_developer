@@ -1,8 +1,8 @@
-package Sem_3_SpringFarServerApp.repository;
+package Sem_3_And_DZ_3_SpringFarServerApp.repository;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Repository;
-import Sem_3_SpringFarServerApp.model.Reader;
+import Sem_3_And_DZ_3_SpringFarServerApp.model.Reader;
 
 import java.util.ArrayList;
 import java.util.List;

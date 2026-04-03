@@ -1,4 +1,4 @@
-package Sem_3_SpringFarServerApp;
+package Sem_3_And_DZ_3_SpringFarServerApp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
