@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+   <h1>Читатели библиотеки им.Ленина<br></h1>
+<table th:if="${readers != null}">
+    <tr>
+        <th>Number</th>
+        <th>Reader</th>
+    </tr>
+    <tr th:each="reader : ${readers}">
+        <td th:text="${reader.id}"></td>
+        <td>
+            <a th:href="@{/readers/ui/readers/{readerId}(readerId=${reader.id})}" th:text="${reader.name}"></a>
+        </td>
+
+    </tr>
+</table>
+
+   <!-- Секция для одного читателя (показывается, если атрибут 'reader' не пустой) -->
+   <div th:if="${reader != null}">
+       <h3>Информация о читателе:</h3>
+       <p>ID: <span th:text="${reader.id}"></span></p>
+       <p>Название: <span th:text="${reader.name}"></span></p>
+       <a href="/readers/ui/readers">Вернуться ко всем читателям</a>
+   </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+   <h1>Запросы выдачи<br></h1>
+<table th:if="${issues != null}">
+    <tr>
+        <th>Number</th>
+        <th>BookId</th>
+    </tr>
+    <tr th:each="issue : ${issues}">
+        <td th:text="${issue.id}"></td>
+        <td>
+            <a th:href="@{/issues/ui/issues/{issueId}(issueId=${issue.id})}" th:text="${issue.getBookId()}"></a>
+        </td>
+
+    </tr>
+</table>
+
+   <!-- Секция для одной книги (показывается, если атрибут 'book' не пустой) -->
+   <div th:if="${issue != null}">
+       <h3>Информация о выдаче:</h3>
+       <p>ID: <span th:text="${issue.id}"></span></p>
+       <p>ID книги: <span th:text="${issue.getBookId()}"></span></p>
+       <p>ID читателя: <span th:text="${issue.getReaderId()}"></span></p>
+       <p>Дата выдачи: <span th:text="${issue.getIssued_at()}"></span></p>
+       <p>Дата возврата: <span th:text="${issue.getReturned_at()}"></span></p>
+       <a href="/issues/ui/issues">Вернуться ко всем выдачам</a>
+   </div>
+
+   <!-- Секция для всех книг конкретного читателя (показывается, если атрибут 'book' не пустой) -->
+   <div th:if="${issuesReader != null}">
+       <h3>Информация о выдаче:</h3>
+       <table th:if="${issuesReader != null}">
+           <tr>
+               <th>Number</th>
+               <th>BookId</th>
+           </tr>
+           <tr th:each="issue : ${issuesReader}">
+               <td th:text="${issue.id}"></td>
+               <td>
+                   <a th:href="@{/books/ui/books/{bookId}(bookId=${issue.bookId})}" th:text="${issue.bookId}"></a>
+               </td>
+
+           </tr>
+       </table>
+       <a href="/issues/ui/issues">Вернуться ко всем выдачам</a>
+   </div>
+
+</body>
+</html>
