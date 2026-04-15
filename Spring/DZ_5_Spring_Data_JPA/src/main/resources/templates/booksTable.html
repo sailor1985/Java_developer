@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+   <h1>Книги библиотеки им.Ленина<br></h1>
+<table th:if="${books != null}">
+    <tr>
+        <th>Number</th>
+        <th>BookName</th>
+    </tr>
+    <tr th:each="book : ${books}">
+        <td th:text="${book.id}"></td>
+        <td>
+            <a th:href="@{/books/ui/books/{bookId}(bookId=${book.id})}" th:text="${book.name}"></a>
+        </td>
+
+    </tr>
+</table>
+
+   <!-- Секция для одной книги (показывается, если атрибут 'book' не пустой) -->
+   <div th:if="${book != null}">
+       <h3>Информация о книге:</h3>
+       <p>ID: <span th:text="${book.id}"></span></p>
+       <p>Название: <span th:text="${book.name}"></span></p>
+       <a href="/books/ui/books">Вернуться ко всем книгам</a>
+       <a href="/issues/ui/issues">Вернуться ко всем выдачам</a>
+   </div>
+
+</body>
+</html>

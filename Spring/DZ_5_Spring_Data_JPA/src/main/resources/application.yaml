@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:librarydb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update # Создает таблицы автоматически на основе сущностей
+    show-sql: true # Чтобы видеть запросы в консоли
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true # Чтобы зайти в консоль по адресу /h2-console
