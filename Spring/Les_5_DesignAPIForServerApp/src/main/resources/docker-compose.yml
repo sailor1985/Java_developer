@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres
+    container_name: postgres-study
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mynewdb
+    ports:
+      - "5432:5432"
+    restart: always
