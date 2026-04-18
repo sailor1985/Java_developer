@@ -18,7 +18,7 @@ public class BookService {
     }
 
     public Optional<Book> findById(Long id) {
-        return bookRepository.findById(Math.toIntExact(id));
+        return bookRepository.findById(id);
     }
 
     public Book save(Book book) {
@@ -26,6 +26,6 @@ public class BookService {
     }
 
     public void deleteById(Long id) {
-        bookRepository.deleteById(Math.toIntExact(id));
+        bookRepository.deleteById(id);
     }
 }
